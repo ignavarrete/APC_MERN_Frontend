@@ -139,7 +139,7 @@ const Formulario = () => {
 
             <div className="mb-5">
                 <label htmlFor="rut" className="text-gray-700 uppercase font-bold ">RUT del Paciente</label>
-                <input type="number" id="rut" placeholder="Rut del paciente sin punto ni guión" min="0" className="border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md" 
+                <input type="text" id="rut" placeholder="Rut del paciente sin punto ni guión" min="0" className="border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md" 
                 {...register("rut", { required: true})}
                 value={rut}
                 onChange={e => setRut(e.target.value)}
